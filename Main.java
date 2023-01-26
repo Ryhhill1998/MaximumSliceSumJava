@@ -11,8 +11,7 @@ public class Main {
         for (int i = 1; i < A.length; i++) {
             int current = A[i];
 
-            if (current > runningTotal
-                    && current + runningTotal < runningTotal) {
+            if (current > current + runningTotal) {
                 runningTotal = current;
             } else {
                 runningTotal += current;
